@@ -20,11 +20,56 @@ const page: NextPage = () => {
       </div>
       <div>
         <h2>مهارت ها:</h2>
-        <p>HTML, CSS, NEXTJS, REACTJS, JAVASCRIPT, TAILWIND, CHAKRAUI</p>
+        <p>HTML, CSS, JavaScript, Next.Js, React, Tailwind CSS, Chakra UI</p>
       </div>
       <div>
         <h2>نمونه کارها:</h2>
-        <p></p>
+        <div>
+          <h3>پروژه Task Manager</h3>
+          <p>
+            برنامه ریزی تقویمی براساس تاریخ و ساعت و ذخیره سازی در indexedDI
+          </p>
+          <a
+            href="https://task-manager-tawny-beta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            مشاهده آنلاین
+          </a>
+          <a
+            href="https://github.com/fasokh/Task-Manager"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            سورس کد
+          </a>
+        </div>
+        <div>
+          <h3>پروژه Todo-list</h3>
+          <p>
+            برنامه ای جهت اضافه کردن برنامه ها با قابلیت Drag&Drop و ذخیره سازی
+            در LocalStorge
+          </p>
+          <a
+            href="https://todo-list-phi-eight-89.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <a
+            href="https://github.com/fasokh/Todo-List"
+            target="_blank"
+            rel="noopener noreferre"
+          ></a>
+        </div>
+        <div>
+          <h3>پروژه Week Planner</h3>
+          <p>
+            برنامه ریزی هفتگی با قابلیت آرشیو کردن برنامه ها و Drag&Drop کردن و
+            ذخیره سازی در LocalStorage
+          </p>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
       </div>
       <div>
         <h2>اطلاعات تماس:</h2>
