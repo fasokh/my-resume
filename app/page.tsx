@@ -93,9 +93,33 @@ const Page: NextPage = () => {
         </h2>
         <div className="space-y-6">
           <div>
+            <h3 className="text-lg font-semibold">Online Shop</h3>
+            <p className="mb-2">
+              یک آنلاین شاپ جهت خرید پوشاک، سفارش دادن و جتسجوی کالا
+            </p>
+            <div className="flex gap-4">
+              <a
+                href="https://online-shop-mu-ebon.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                مشاهده آنلاین
+              </a>
+              <a
+                href="https://github.com/fasokh/online-shop"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                سورس کد
+              </a>
+            </div>
+          </div>
+          <div>
             <h3 className="text-lg font-semibold">Task Manager</h3>
             <p className="mb-2">
-              برنامه‌ریزی تقویمی بر اساس تاریخ و ساعت با ذخیره‌سازی در
+              مدیریت انجام کارها بر اساس تاریخ و ساعت با ذخیره‌سازی در
               IndexedDB.
             </p>
             <div className="flex gap-4">
@@ -152,6 +176,28 @@ const Page: NextPage = () => {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+          تجربه کاری
+        </h2>
+        <p className="mb-2">
+          انجام پروژه های شخصی با استفاده از NextJs و Firebase، شامل طراحی
+          ریسپانسیو، بهینه سازی عملکرد و تعامل با APIهای خارجی(Strava, Google
+          Maps)
+        </p>
+      </section>
+
+      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+          تکنولوژی های مورد علاقه
+        </h2>
+        <p className="mb-2">
+          انجام پروژه های شخصی با استفاده از NextJs و Firebase، شامل طراحی
+          ریسپانسیو، بهینه سازی عملکرد و تعامل با APIهای خارجی(Strava, Google
+          Maps)
+        </p>
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
