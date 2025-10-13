@@ -23,16 +23,27 @@ const Page: NextPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans rtl">
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold mb-2">فاطمه سخندان</h1>
-        <h2 className="text-xl text-blue-600">فرانت‌اند دولوپر</h2>
+        <section className="text-center my-8">
+          <h1 className="text-3xl font-bold mb-2">فاطمه سخندان</h1>
+          <p className="text-gray-600 mb-4">Front-End Developer</p>
+
+          <a
+            href="/resume.pdf"
+            download
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition"
+          >
+            دانلود رزومه
+          </a>
+        </section>
       </div>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">درباره من</h2>
         <p className="leading-8">
-          من از سال 1400 شروع به یادگیری برنامه‌نویسی فرانت‌اند به‌صورت خودخوان
-          کردم و در حال حاضر با Next.js و React کار می‌کنم. چندین پروژه شخصی
-          نوشتم و آماده‌ی همکاری با تیم‌های حرفه‌ای هستم.
+          من از سال ۱۴۰۰ یادگیری برنامه‌نویسی فرانت‌اند را به‌صورت خودآموز آغاز
+          کردم و در این مسیر مهارت خود را در React و Next.js توسعه دادم. چندین
+          پروژه‌ی شخصی و کاربردی اجرا کرده‌ام و علاقه‌مند به همکاری با تیم‌های
+          حرفه‌ای برای خلق محصولات باکیفیت و کاربرمحور هستم.
         </p>
       </section>
 
@@ -198,6 +209,33 @@ const Page: NextPage = () => {
           ریسپانسیو، بهینه سازی عملکرد و تعامل با APIهای خارجی(Strava, Google
           Maps)
         </p>
+      </section>
+
+      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">هدف شغلی</h2>
+        <p>
+          هدف من رشد در مسیر توسعه فرانت‌اند، همکاری با تیم‌های حرفه‌ای و
+          یادگیری تکنولوژی‌های جدیدی مانند TypeScript و Server Components در
+          Next.js است.
+        </p>
+      </section>
+
+      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+          مهارت‌های فردی
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {["کار تیمی", "حل مسئله", "مدیریت زمان", "یادگیری سریع", "همدلی"].map(
+            (skill) => (
+              <span
+                key={skill}
+                className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+              >
+                {skill}
+              </span>
+            )
+          )}
+        </div>
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
