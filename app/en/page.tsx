@@ -168,7 +168,7 @@ const Page: NextPage = () => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold">Week Planner</h3>
             <p className="mb-2">Type your jobs, Drag&Drop and archive them</p>
             <div className="flex gap-4">
@@ -189,7 +189,7 @@ const Page: NextPage = () => {
                 visit
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
