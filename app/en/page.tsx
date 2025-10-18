@@ -9,7 +9,10 @@ const socialLinks = [
 
 const Page: NextPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans">
+    <div
+      className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans"
+      dir="ltr"
+    >
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold mb-2">Fatemeh Sokhandan</h1>
         <p className="text-gray-600 mb-4">Front-End Developer</p>
@@ -89,14 +92,14 @@ const Page: NextPage = () => {
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Samples</h2>
-        <div className="space-y-6">
+        <div className="flex flex-col gap-8">
           <div>
             <h3 className="text-lg font-semibold">Online Shop</h3>
             <p className="mb-2">
               By online-shop you can buy the stuff of your need, increase and
               decrease them also there is a registration
             </p>
-            <div className="flex gap-">
+            <div className="flex gap-5">
               <a
                 href="https://github.com/fasokh/online-shop"
                 target="_blank"
@@ -114,13 +117,15 @@ const Page: NextPage = () => {
                 visit
               </a>
             </div>
+          </div>
 
-            <div>
-              <h3 className="text-lg font-semibold">Task Manager</h3>
-              <p className="mb-2">
-                This app allows you to add tasks through a form, schedule them,
-                and then search, edit, or delete them.
-              </p>
+          <div>
+            <h3 className="text-lg font-semibold">Task Manager</h3>
+            <p className="mb-2">
+              This app allows you to add tasks through a form, schedule them,
+              and then search, edit, or delete them.
+            </p>
+            <div className="flex gap-5">
               <a
                 href="https://github.com/fasokh/Task-Manager"
                 target="_blank"
@@ -129,16 +134,60 @@ const Page: NextPage = () => {
               >
                 source code
               </a>
-              <div className="flex gap-4">
-                <a
-                  href="https://task-manager-tawny-beta.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  visit
-                </a>
-              </div>
+              <a
+                href="https://task-manager-tawny-beta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                visit
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold">Todo List</h3>
+            <p className="mb-2">A schedule application by using Drag&Drop</p>
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/fasokh/Todo-List"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                source code
+              </a>
+              <a
+                href="https://todo-list-phi-eight-89.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                visit
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold">Week Planner</h3>
+            <p className="mb-2">Type your jobs, Drag&Drop and archive them</p>
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/fasokh/Week-planner"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                source code
+              </a>
+              <a
+                href="https://todo-list-phi-eight-89.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                visit
+              </a>
             </div>
           </div>
         </div>
