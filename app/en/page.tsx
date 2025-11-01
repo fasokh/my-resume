@@ -168,12 +168,12 @@ const Page: NextPage = () => {
             </div>
           </div>
 
-          {/* <div>
-            <h3 className="text-lg font-semibold">Week Planner</h3>
-            <p className="mb-2">Type your jobs, Drag&Drop and archive them</p>
+          <div>
+            <h3 className="text-lg font-semibold">Login System</h3>
+            <p className="mb-2">A simple login system with dual language</p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/fasokh/Week-planner"
+                href="https://github.com/fasokh/LoginSystem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
@@ -181,7 +181,7 @@ const Page: NextPage = () => {
                 source code
               </a>
               <a
-                href="https://todo-list-phi-eight-89.vercel.app/"
+                href="https://login-system-omega-sooty.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
@@ -189,7 +189,7 @@ const Page: NextPage = () => {
                 visit
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 

@@ -181,11 +181,26 @@ const Page: NextPage = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">Week Planner</h3>
-            <p className="mb-2">
-              برنامه‌ریز هفتگی با قابلیت Drag & Drop، آرشیو و ذخیره در
-              LocalStorage.
-            </p>
+            <h3 className="text-lg font-semibold">Login System</h3>
+            <p className="mb-2">یک سیستم ورود دو زبانه</p>
+            <div className="flex gap-4">
+              <a
+                href="https://login-system-omega-sooty.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                مشاهده آنلاین
+              </a>
+              <a
+                href="https://github.com/fasokh/LoginSystem"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                سورس کد
+              </a>
+            </div>
           </div>
         </div>
       </section>
