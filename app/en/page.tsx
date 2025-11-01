@@ -200,6 +200,15 @@ const Page: NextPage = () => {
         <p>📞 +98 936 336 3326</p>
         <p>📧 fatemeh.sokhandan@gmail.com</p>
       </section>
+      <footer>
+        <span>
+          <a href="/en">English </a>
+        </span>
+        |
+        <span>
+          <a href="/"> فارسی</a>
+        </span>
+      </footer>
     </div>
   );
 };
