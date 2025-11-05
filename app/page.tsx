@@ -78,6 +78,7 @@ const Page: NextPage = () => {
             "Chakra UI",
             "Postman",
             "Trelo",
+            "axios"
           ].map((skill) => (
             <span
               key={skill}
