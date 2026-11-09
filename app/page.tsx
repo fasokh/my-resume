@@ -23,27 +23,16 @@ const Page: NextPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans rtl">
       <div className="text-center mb-10">
-        <section className="text-center my-8">
-          <h1 className="text-3xl font-bold mb-2">فاطمه سخندان</h1>
-          <p className="text-gray-600 mb-4">Front-End Developer</p>
-
-          <a
-            href="/resume2025.pdf"
-            download
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition border-none"
-          >
-            دانلود رزومه
-          </a>
-        </section>
+        <h1 className="text-3xl font-bold mb-2">فاطمه سخندان</h1>
+        <h2 className="text-xl text-blue-600">فرانت‌اند دولوپر</h2>
       </div>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">درباره من</h2>
         <p className="leading-8">
-          من از سال ۱۴۰۰ یادگیری برنامه‌نویسی فرانت‌اند را به‌صورت خودآموز آغاز
-          کردم و در این مسیر مهارت خود را در React و Next.js توسعه دادم. چندین
-          پروژه‌ی شخصی و کاربردی اجرا کرده‌ام و علاقه‌مند به همکاری با تیم‌های
-          حرفه‌ای برای خلق محصولات باکیفیت و کاربرمحور هستم.
+          من از سال 1400 شروع به یادگیری برنامه‌نویسی فرانت‌اند به‌صورت خودخوان
+          کردم و در حال حاضر با Next.js و React کار می‌کنم. چندین پروژه شخصی
+          نوشتم و آماده‌ی همکاری با تیم‌های حرفه‌ای هستم.
         </p>
       </section>
 
@@ -60,7 +49,7 @@ const Page: NextPage = () => {
               >
                 {item}
               </span>
-            )
+            ),
           )}
         </div>
       </section>
@@ -78,7 +67,6 @@ const Page: NextPage = () => {
             "Chakra UI",
             "Postman",
             "Trelo",
-            "Axios"
           ].map((skill) => (
             <span
               key={skill}
@@ -128,7 +116,6 @@ const Page: NextPage = () => {
               </a>
             </div>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold">Task Manager</h3>
             <p className="mb-2">
@@ -182,26 +169,11 @@ const Page: NextPage = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">Login System</h3>
-            <p className="mb-2">یک سیستم ورود دو زبانه</p>
-            <div className="flex gap-4">
-              <a
-                href="https://login-system-omega-sooty.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                مشاهده آنلاین
-              </a>
-              <a
-                href="https://github.com/fasokh/LoginSystem"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                سورس کد
-              </a>
-            </div>
+            <h3 className="text-lg font-semibold">Week Planner</h3>
+            <p className="mb-2">
+              برنامه‌ریز هفتگی با قابلیت Drag & Drop، آرشیو و ذخیره در
+              LocalStorage.
+            </p>
           </div>
         </div>
       </section>
@@ -229,30 +201,53 @@ const Page: NextPage = () => {
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">هدف شغلی</h2>
-        <p>
-          هدف من رشد در مسیر توسعه فرانت‌اند، همکاری با تیم‌های حرفه‌ای و
-          یادگیری تکنولوژی‌های جدیدی مانند TypeScript و Server Components در
-          Next.js است.
-        </p>
-      </section>
+  <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+    هدف شغلی
+  </h2>
+  <p>
+    هدف من رشد در مسیر توسعه فرانت‌اند، همکاری با تیم‌های حرفه‌ای و
+    یادگیری تکنولوژی‌های جدید در حوزه React و Next.js است.
+  </p>
+</section>
+
+<section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+  <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+    مهارت‌های فردی
+  </h2>
+  <div className="flex flex-wrap gap-2">
+    {["کار تیمی", "حل مسئله", "مدیریت زمان", "یادگیری سریع", "همدلی"].map(
+      (skill) => (
+        <span
+          key={skill}
+          className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+        >
+          {skill}
+        </span>
+      )
+    )}
+  </div>
+</section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
-          مهارت‌های فردی
-        </h2>
-        <div className="flex flex-wrap gap-2">
-          {["کار تیمی", "حل مسئله", "مدیریت زمان", "یادگیری سریع", "همدلی"].map(
-            (skill) => (
-              <span
-                key={skill}
-                className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
-              >
-                {skill}
-              </span>
-            )
-          )}
-        </div>
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">ابزارها</h2>
+        <p className="mb-2">
+          {[
+            "Git",
+            "Firebase",
+            "Redux Toolkit",
+            "TypeScript",
+            "Vercel",
+            "GitHub",
+            "Vite",
+          ].map((item) => (
+            <span
+              key={item}
+              className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+            >
+              {item}
+            </span>
+          ))}
+        </p>
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
