@@ -1,6 +1,3 @@
-import { NextPage } from "next";
-import React from "react";
-
 const socialLinls = [
   {
     name: "GitHub",
@@ -19,7 +16,7 @@ const socialLinls = [
   },
 ];
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans rtl">
       <div className="text-center mb-10">
@@ -201,32 +198,30 @@ const Page: NextPage = () => {
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-  <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
-    هدف شغلی
-  </h2>
-  <p>
-    هدف من رشد در مسیر توسعه فرانت‌اند، همکاری با تیم‌های حرفه‌ای و
-    یادگیری تکنولوژی‌های جدید در حوزه React و Next.js است.
-  </p>
-</section>
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">هدف شغلی</h2>
+        <p>
+          هدف من رشد در مسیر توسعه فرانت‌اند، همکاری با تیم‌های حرفه‌ای و
+          یادگیری تکنولوژی‌های جدید در حوزه React و Next.js است.
+        </p>
+      </section>
 
-<section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-  <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
-    مهارت‌های فردی
-  </h2>
-  <div className="flex flex-wrap gap-2">
-    {["کار تیمی", "حل مسئله", "مدیریت زمان", "یادگیری سریع", "همدلی"].map(
-      (skill) => (
-        <span
-          key={skill}
-          className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
-        >
-          {skill}
-        </span>
-      )
-    )}
-  </div>
-</section>
+      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
+          مهارت‌های فردی
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {["کار تیمی", "حل مسئله", "مدیریت زمان", "یادگیری سریع", "همدلی"].map(
+            (skill) => (
+              <span
+                key={skill}
+                className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+              >
+                {skill}
+              </span>
+            ),
+          )}
+        </div>
+      </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">ابزارها</h2>
