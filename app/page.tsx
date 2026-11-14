@@ -64,6 +64,7 @@ const Page = () => {
             "Chakra UI",
             "Postman",
             "Trelo",
+            "TypeScript",
           ].map((skill) => (
             <span
               key={skill}
@@ -90,9 +91,36 @@ const Page = () => {
         </h2>
         <div className="space-y-6">
           <div>
+            <h3 className="text-lg font-semibold">TodoPro</h3>
+            <p className="mb-2">
+              مدیریت وظایف با قابلیت افزودن، ویرایش، حذف، اولویت‌بندی و فیلتر
+              کردن کارها. پیاده‌سازی مدیریت وضعیت با useReducer، ذخیره‌سازی
+              اطلاعات در localStorage و استفاده از TypeScript برای تعریف ساختار
+              داده‌ها.
+            </p>
+            <div className="flex gap-4">
+              <a
+                href="https://todo-pro-zeta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                مشاهده آنلاین
+              </a>
+              <a
+                href="https://github.com/fasokh/TodoPro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                سورس کد
+              </a>
+            </div>
+          </div>
+          <div>
             <h3 className="text-lg font-semibold">Online Shop</h3>
             <p className="mb-2">
-              یک آنلاین شاپ جهت خرید پوشاک، سفارش دادن و جتسجوی کالا
+              فروشگاه اینترنتی با قابلیت جست‌وجو و مشاهده محصولات و ثبت سفارش.
             </p>
             <div className="flex gap-4">
               <a
@@ -177,18 +205,7 @@ const Page = () => {
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
-          تجربه کاری
-        </h2>
-        <p className="mb-2">
-          انجام پروژه های شخصی با استفاده از NextJs و Firebase، شامل طراحی
-          ریسپانسیو، بهینه سازی عملکرد و تعامل با APIهای خارجی(Strava, Google
-          Maps)
-        </p>
-      </section>
-
-      <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">
-          تکنولوژی های مورد علاقه
+          پروژه های شخصی
         </h2>
         <p className="mb-2">
           انجام پروژه های شخصی با استفاده از NextJs و Firebase، شامل طراحی
@@ -225,7 +242,7 @@ const Page = () => {
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">ابزارها</h2>
-        <p className="mb-2">
+        <div className="mb-2">
           {[
             "Git",
             "Firebase",
@@ -242,7 +259,7 @@ const Page = () => {
               {item}
             </span>
           ))}
-        </p>
+        </div>
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
