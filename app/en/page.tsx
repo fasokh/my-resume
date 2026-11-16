@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import React from "react";
 
 const socialLinks = [
@@ -7,7 +6,7 @@ const socialLinks = [
   { name: "LinkedIn", url: "https://www.linkedin.com/in/fatemeh-sokhandan" },
 ];
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <div
       className="min-h-screen bg-gray-100 text-gray-800 px-6 py-10 font-sans"
@@ -28,10 +27,11 @@ const Page: NextPage = () => {
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">About Me</h2>
         <p className="leading-8">
-          I started learning front-end development self-taught in 2021 and have
-          been focusing on React and Next.js. I’ve built several personal
-          projects and I’m eager to collaborate with professional teams to build
-          high-quality and user-focused web applications.
+          I am a self-taught front-end developer who started learning web
+          development in 2021. I have been focusing on React and Next.js and
+          have built several personal projects. I am eager to join a
+          professional team, collaborate with other developers, and build
+          high-quality, user-focused web applications.
         </p>
       </section>
 
@@ -48,7 +48,8 @@ const Page: NextPage = () => {
             "Chakra UI",
             "Postman",
             "Trello",
-            "Axios"
+            "Axios",
+            "TypeScript",
           ].map((skill) => (
             <span
               key={skill}
@@ -63,13 +64,16 @@ const Page: NextPage = () => {
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Education</h2>
         <div className="flex flex-wrap gap-2">
-          {["IT Engineering", "Computer Networks System"].map((skill) => (
-            <a
+          {[
+            "B.Sc. in Information Technology Engineering",
+            "M.Sc. in Computer Engineering (Computer Networks)",
+          ].map((skill) => (
+            <span
               key={skill}
               className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
             >
               {skill}
-            </a>
+            </span>
           ))}
         </div>
       </section>
@@ -84,6 +88,8 @@ const Page: NextPage = () => {
               href={skill.url}
               key={skill.name}
               className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+              target="_blank"
+              rel="noopener noreferrer" 
             >
               {skill.name}
             </a>
@@ -92,13 +98,41 @@ const Page: NextPage = () => {
       </section>
 
       <section className="mb-8 bg-white shadow-md rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Samples</h2>
+        <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Projects</h2>
         <div className="flex flex-col gap-8">
+          <div>
+            <h3 className="text-lg font-semibold">TodoPro</h3>
+            <p className="mb-2">
+              A task management application that allows users to add, edit,
+              delete, prioritize, and filter tasks. It uses useReducer for state
+              management, localStorage for data persistence, and TypeScript for
+              type safety.
+            </p>
+            <div className="flex gap-5">
+              <a
+                href="https://github.com/fasokh/TodoPro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Source Code
+              </a>
+              <a
+                href="https://todo-pro-zeta.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
           <div>
             <h3 className="text-lg font-semibold">Online Shop</h3>
             <p className="mb-2">
-              By online-shop you can buy the stuff of your need, increase and
-              decrease them also there is a registration
+              An online shopping application where users can browse products,
+              add items to their cart, adjust quantities, and register for an
+              account.
             </p>
             <div className="flex gap-5">
               <a
@@ -107,7 +141,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                source code
+                Source Code
               </a>
               <a
                 href="https://online-shop-mu-ebon.vercel.app/"
@@ -115,7 +149,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                visit
+                Live Demo
               </a>
             </div>
           </div>
@@ -133,7 +167,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                source code
+                Source Code
               </a>
               <a
                 href="https://task-manager-tawny-beta.vercel.app/"
@@ -141,14 +175,17 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                visit
+                Live Demo
               </a>
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Todo List</h3>
-            <p className="mb-2">A schedule application by using Drag&Drop</p>
+            <p className="mb-2">
+              A scheduling application with drag-and-drop functionality and
+              localStorage support.
+            </p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/fasokh/Todo-List"
@@ -156,7 +193,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                source code
+                Source Code
               </a>
               <a
                 href="https://todo-list-phi-eight-89.vercel.app/"
@@ -164,14 +201,16 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                visit
+                Live Demo
               </a>
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Login System</h3>
-            <p className="mb-2">A simple login system with dual language</p>
+            <p className="mb-2">
+              A simple bilingual login system with support for two languages.
+            </p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/fasokh/LoginSystem"
@@ -179,7 +218,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                source code
+                Source Code
               </a>
               <a
                 href="https://login-system-omega-sooty.vercel.app/"
@@ -187,7 +226,7 @@ const Page: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                visit
+                Live Demo
               </a>
             </div>
           </div>
